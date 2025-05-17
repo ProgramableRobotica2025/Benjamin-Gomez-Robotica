@@ -9,13 +9,11 @@ void setup() {
   pinMode(green, OUTPUT);
   pinMode(blue, OUTPUT);
   pinMode(buzzer, OUTPUT);
-}
-
 void loop() {
   // put your main code here, to run repeatedly:
-  luces();
+  luces_buzzer();
 }
-void luces() {
+void luces_buzzer() {
   digitalWrite(red, HIGH);
   digitalWrite(red, LOW);
   analogWrite(buzzer, 720);
